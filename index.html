@@ -1,19 +1,72 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Antenna TV</title>
-<style>
-:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mut:#6e6e73;--ac:#0a64d6}
-@media(prefers-color-scheme:dark){:root{--bg:#111;--fg:#f2f2f2;--mut:#a1a1a6;--ac:#6cb0ff}}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
-h1{font-size:2rem;margin:.2em 0}h2{font-size:1.2rem;margin-top:1.8em}
-a{color:var(--ac)}.mut{color:var(--mut);font-size:.9rem}
-nav a{margin-right:16px;font-size:.95rem}
-</style></head><body><main>
-<nav><a href="index.html">Antenna TV</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
-<h1>Antenna TV</h1>
-<p>Antenna TV is a media player for iPhone and iPad. Add your own IPTV playlist (Xtream Codes, M3U or Stalker portal) and watch live TV, movies and shows in a clean, fast interface.</p>
-<p><strong>Antenna does not provide any channels, playlists or content.</strong> You need your own subscription from a provider you are entitled to use.</p>
-<ul><li><a href="support.html">Support</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul>
-<p class="mut">© Antenna TV</p>
-</main></body></html>
+<title>Antenna TV – Your playlists, on a better screen</title><meta name="description" content="A fast, clean player for the Xtream, M3U or Stalker playlist you already have. Live TV, movies and shows on iPhone and iPad.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css"></head><body>
+<header class="wrap"><div class="bar"><a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span>Antenna TV</a>
+<nav aria-label="Main"><a href="index.html#how">How it works</a><a href="index.html#pro">Pro</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+<div><h1>Your playlists, on a better screen.</h1>
+<p class="lede">Antenna TV plays the Xtream, M3U or Stalker playlist you already have: live channels, movies and shows in one calm, fast app for iPhone and iPad. <strong>It doesn’t supply or sell any content.</strong></p>
+<div class="actions"><span class="btn" aria-disabled="true">Coming to the App Store</span><a class="btn quiet" href="#how">See how it works</a></div></div>
+<div class="stage"><svg class="rings" viewBox="130 134 540 252" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fd8ff"/><stop offset="1" stop-color="#ff5fb8"/></linearGradient></defs><g stroke="url(#g)"><path pathLength="1" d="M287.4 375.0 A130 130 0 0 1 512.6 375.0"/><path pathLength="1" d="M218.1 335.0 A210 210 0 0 1 581.9 335.0"/><path pathLength="1" d="M148.9 295.0 A290 290 0 0 1 651.1 295.0"/></g></svg>
+<div class="phone" role="img" aria-label="Antenna TV on iPhone showing a featured film, continue-watching posters and live channels"><div class="screen">
+<div class="s-top">Antenna TV<span>Movies</span></div>
+<div class="s-hero"><b>Harbour Lights</b><small>Drama · 2h 04m</small><span class="s-play">Play</span></div>
+<div class="s-row">Continue watching</div>
+<div class="s-tiles"><div class="t t1">Night Ferry</div><div class="t t2">Salt Road</div><div class="t t3">The Long Orchard</div></div>
+<div class="s-row">Live now</div>
+<div class="s-live"><div class="c">News 24<i style="--p:70%"></i></div><div class="c">Harbour Sport<i style="--p:35%"></i></div><div class="c">Cinema 1<i style="--p:55%"></i></div></div>
+<div class="s-row">Because you watched</div>
+<div class="s-tiles wide"><div class="t t4">Glass Hours</div><div class="t t5">Red Tide</div><div class="t t6">Northbound</div></div>
+<div class="s-tab"><b>TV</b><span>Movies</span><span>Shows</span><span>Settings</span></div>
+</div></div></div></div></div>
+
+<section id="how"><div class="wrap split">
+<div><h2>Bring the playlist you already have.</h2>
+<p class="intro">Antenna TV works with the three ways providers usually hand you a playlist. Add one in under a minute.</p></div>
+<dl class="sources">
+<div><dt>Xtream Codes</dt><dd>Enter the server address, username and password from your provider.</dd></div>
+<div><dt>M3U</dt><dd>Paste the playlist link, or import the file from your phone. A guide link is picked up automatically.</dd></div>
+<div><dt>Stalker portal</dt><dd>Enter the portal address and your device’s MAC address, as your provider gave them to you.</dd></div>
+</dl></div></section>
+
+<section><div class="wrap">
+<h2>Built for watching, not for managing.</h2>
+<div class="cols">
+<div><h3>Live TV</h3><p>Channels sorted into your provider’s groups, with a programme guide and search. The app reopens on the channel you left, muted until you say otherwise.</p></div>
+<div><h3>Movies and shows</h3><p>Poster-first rows for every group, seasons and episodes, and Continue Watching. Add your own free OMDb key to see IMDb and Rotten Tomatoes ratings.</p></div>
+<div><h3>Private by design</h3><p>No account, no ads, no tracking. Playlists, favourites and history stay on your device, and passwords sit in the iOS Keychain.</p></div>
+</div></div></section>
+
+<section id="pro"><div class="wrap">
+<h2>Free to use. Pro when you want more.</h2>
+<p class="intro">Everything you need to watch is free. Pro adds the things that make a big library easier to live with.</p>
+<table><thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead><tbody>
+<tr><td>Live TV, movies, shows and search</td><td class="y">Included</td><td class="y">Included</td></tr>
+<tr><td>Audio and subtitle track choice</td><td class="y">Included</td><td class="y">Included</td></tr>
+<tr><td>Resume the last channel</td><td class="y">Included</td><td class="y">Included</td></tr>
+<tr><td>Playlists</td><td class="n">One</td><td class="y">As many as you like</td></tr>
+<tr><td>Favourites</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Watch history, Continue Watching and suggestions</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Recently and most watched channels</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Hide groups and reorder channels</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Subtitle size, colour and background</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Background playback, picture-in-picture and lock-screen controls</td><td class="n">No</td><td class="y">Yes</td></tr>
+</tbody></table>
+<div class="prices"><div><b>CA$0.99</b><span>a month, with a 7-day free trial</span></div><div><b>CA$9.99</b><span>a year, with a 7-day free trial</span></div><div><b>CA$19.99</b><span>once, yours for good</span></div></div>
+<p class="fine">Prices are shown in Canadian dollars; the App Store shows your local price. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Manage them any time in your Apple Account settings.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Questions people ask.</h2>
+<details><summary>Does Antenna TV include any channels?</summary><p>No. It’s a player. You need a playlist from a provider you’re entitled to use.</p></details>
+<details><summary>Will Pro work on my new phone or iPad?</summary><p>Yes. Sign in with the same Apple Account and tap Restore Purchases in Settings. Playlists aren’t synced between devices, so add them again.</p></details>
+<details><summary>What happens to my data?</summary><p>It stays on your device. There’s no Antenna TV account and nothing is sent to us. Read the <a href="privacy.html">Privacy Policy</a> for the details.</p></details>
+<details><summary>Something won’t play. What should I check?</summary><p>Make sure your subscription with the provider is active and the playlist details are right, then try another channel. If it still fails, <a href="support.html">get in touch</a>.</p></details>
+</div></section>
+<footer><div class="wrap"><div>Antenna TV is a player. It does not provide channels or content.<br>© Antenna TV</div>
+<nav aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav></div></footer></body></html>
